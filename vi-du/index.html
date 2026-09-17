@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Đếm ngược sự kiện · ví dụ nhúng · Event countdown embed example</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    margin: 0 auto; padding: 2rem 1rem 4rem; max-width: 880px;
+    font: 16px/1.7 system-ui, -apple-system, "Segoe UI", sans-serif;
+  }
+  h1 { font-size: 1.4rem; margin: 0 0 .3rem; }
+  h2 { font-size: 1.05rem; margin: 2.2rem 0 .6rem; }
+  p { margin: 0 0 1rem; }
+  .doi { display: grid; gap: 1.6rem; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
+  .cot { border: 1px solid #8884; border-radius: 8px; padding: 1rem; }
+  .cot h3 { font-size: .85rem; text-transform: uppercase; letter-spacing: .05em; margin: 0 0 .7rem; opacity: .65; }
+  pre { overflow-x: auto; padding: .9rem 1rem; border: 1px solid #8884; border-radius: 8px; font-size: .82rem; }
+  .ghi { font-size: .88rem; opacity: .75; }
+</style>
+</head>
+<body>
+
+<h1>Đếm ngược sự kiện</h1>
+<p class="ghi">Đếm ngược tới một ngày bất kỳ do bạn đặt: khai trương, ra mắt, kỷ niệm thành lập.<br>A countdown to any date you set: an opening, a launch, a founding anniversary.</p>
+
+<p>Trang này là ví dụ nhúng, mở thẳng bằng trình duyệt là chạy, không cần
+dựng gì. <span lang="en">This page is a working embed example; open it in a
+browser as it is, nothing to build.</span></p>
+
+<h2>Mã nhúng · Embed code</h2>
+<pre><code>&lt;div data-widget="dem-nguoc" data-ngay-den="2027-03-15" data-ten-su-kien="Khai truong chi nhanh 2">&lt;/div>
+&lt;script async src="https://nhatnguyet.org/embed/w.js">&lt;/script></code></pre>
+
+<h2>Đang chạy thật · Running live</h2>
+<div class="doi">
+  <div class="cot">
+    <h3>Mặc định · Default</h3>
+    <div data-widget="dem-nguoc" data-ngay-den="2027-03-15" data-ten-su-kien="Khai truong chi nhanh 2"></div>
+  </div>
+  <div class="cot">
+    <h3>Nền tối, màu riêng · Dark, custom accent</h3>
+    <div data-widget="dem-nguoc" data-theme="dark" data-accent="#1f6f5c" data-ngay-den="2027-03-15" data-ten-su-kien="Khai truong chi nhanh 2"></div>
+  </div>
+</div>
+
+<h2>Điều kiện · Terms</h2>
+<p class="ghi">Miễn phí, giữ nguyên dòng ghi nguồn ở đáy widget.
+<a href="https://nhatnguyet.org/widget/dieu-khoan">Bản đầy đủ</a>.<br>
+<span lang="en">Free to use; keep the attribution line at the foot of the
+widget. <a href="https://nhatnguyet.org/widget/dieu-khoan">Full terms</a>.</span></p>
+
+<script async src="https://nhatnguyet.org/embed/w.js"></script>
+</body>
+</html>
